@@ -1,0 +1,6 @@
+<h1>Albums</h1>
+<ul>
+  <li *ngFor="let album of albums$">
+    <a href="/albums/{{album.id}}">{{ album.title }}</a>  
+  </li>
+</ul>

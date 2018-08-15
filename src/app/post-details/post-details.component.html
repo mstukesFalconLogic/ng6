@@ -1,0 +1,14 @@
+<h1>{{ post$.title }}</h1>
+
+<ul>
+  <li>
+    <strong>Title:</strong> {{ post$.title }}</li>
+  <li>
+    <strong>Body:</strong> {{ post$.body }}</li>
+  <li>
+    <strong>Created By:</strong> {{ user$.name }}</li>
+  <li>
+    <strong>Comments:</strong> 
+    <app-comment *ngFor="let comment of comments$" [comment]="comment"></app-comment>
+  </li>
+</ul>

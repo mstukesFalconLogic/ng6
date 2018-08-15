@@ -10,5 +10,20 @@
         <i class="material-icons">message</i>
       </a>
     </li>
+    <li>
+      <a routerLink="albums" [class.activated]="currentUrl == '/albums'">
+        <i class="material-icons">collections</i>
+      </a>
+    </li>
+    <li>
+      <a routerLink="todos" [class.activated]="currentUrl == '/todos'">
+        <i class="material-icons">done</i>
+      </a>
+    </li>
+    <li>
+      <a routerLink="new" [class.activated]="currentUrl == '/new'">
+        <i class="material-icons">add_circle</i>
+      </a>
+    </li>
   </ul>
 </nav>

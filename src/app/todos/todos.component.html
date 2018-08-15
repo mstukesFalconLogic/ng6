@@ -1,0 +1,10 @@
+<h1>Todos</h1>
+
+<ul>
+  <li *ngFor="let todo of todos$">
+    <a href="/todos/{{todo.id}}">{{ todo.title }}</a>  
+    <ul>
+      <li>Completed: {{ todo.completed }}</li>
+    </ul>
+  </li>
+</ul>

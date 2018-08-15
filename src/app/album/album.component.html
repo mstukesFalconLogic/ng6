@@ -1,0 +1,8 @@
+<a routerLink="/albums/{{album.id}}">
+  <div class="card">
+    <img src="{{thumbnail}}" alt="Avatar" style="width:100%">
+    <div class="text-container">
+      <span class="text">{{ (album.title.length > 12) ? (album.title | slice:0:12) + '...' : (album.title) }}</span>
+    </div>
+  </div> 
+</a>
